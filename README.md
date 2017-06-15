@@ -26,7 +26,7 @@ services:
         links:
             - kafka
     consumer:
-        image: johnsn/kafka-cli
+        image: taion809/kafka-cli
         command: kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic test --from-beginning
         links:
             - kafka
