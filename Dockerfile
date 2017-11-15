@@ -1,7 +1,7 @@
 FROM java:8
 MAINTAINER Nicholas Johns <nicholas.a.johns5@gmail.com>
 
-ENV KAFKA_VERSION=0.11.0.1
+ENV KAFKA_VERSION=1.0.0
 ENV KAFKA_URL=http://www.namesdir.com/mirrors/apache/kafka/${KAFKA_VERSION}/kafka_2.11-${KAFKA_VERSION}.tgz
 ENV KAFKA_TMP_DEST=/opt/kafka.tgz
 ENV KAFKA_WORKDIR=/opt/kafka
