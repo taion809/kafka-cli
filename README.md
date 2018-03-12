@@ -21,12 +21,12 @@ services:
         volumes:
             - /var/run/docker.sock:/var/run/docker.sock
     producer:
-        image: taion809/kafka-cli:0.10.2.0
+        image: taion809/kafka-cli:1.0.1
         command: kafka-console-producer.sh --broker-list kafka:9092 --topic test
         links:
             - kafka
     consumer:
-        image: taion809/kafka-cli:0.10.2.0
+        image: taion809/kafka-cli:1.0.1
         command: kafka-console-consumer.sh --bootstrap-server kafka:9092 --topic test --from-beginning
         links:
             - kafka
