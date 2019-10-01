@@ -1,7 +1,7 @@
 FROM java:8
 MAINTAINER Nicholas Johns <nicholas.a.johns5@gmail.com>
 
-ENV KAFKA_VERSION=2.3.0
+ENV KAFKA_VERSION=2.2.1
 ENV KAFKA_URL=http://mirrors.sonic.net/apache/kafka/${KAFKA_VERSION}/kafka_2.12-${KAFKA_VERSION}.tgz
 ENV KAFKA_TMP_DEST=/opt/kafka.tgz
 ENV KAFKA_WORKDIR=/opt/kafka
